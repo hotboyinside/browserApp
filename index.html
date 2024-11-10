@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой браузер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nav-bar">
+        <input type="text" id="url-bar" placeholder="Введите URL" />
+        <button id="go-button">Перейти</button>
+        <button id="close-button">Закрыть</button>
+    </div>
+    <div id="browser-content"></div>
+    <script>
+        document.getElementById('go-button').addEventListener('click', () => {
+            const url = document.getElementById('url-bar').value;
+            window.location.href = url;
+        });
+        // document.getElementById('close-button').addEventListener('click');
+    </script>
+</body>
+
+</html>
